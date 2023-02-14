@@ -4,7 +4,7 @@ Add rel previous/next link to Webflow sites using pagination
 
 Clone an example from Made in Webflow:
 
-insert link here
+https://webflow.com/made-in-webflow/website/pagination-and-rel-next-previous
 
 ## The problem
 
@@ -95,9 +95,7 @@ We've seen some awesome solutions to this in the community. Big shouts to Forres
 
 https://discourse.webflow.com/t/seamless-pagination-with-pjax/75284
 
-But, for us, this solution won't work because since it's replacing content in the frame, it's not changing the head of the document. Another option here can be found in our `create-links` file.
-
-Here, we have all the same things as we do above, but we add some pieces.
+But, for us, this solution won't work because since it's replacing content in the frame, it's not changing the head of the document. We could add some additional code here to implement this solution, but instead we have an addtional option using the `scrollIntoView` method.
 
 First, we're adding some new Global variables that we'll comment here in this snippet:
 
